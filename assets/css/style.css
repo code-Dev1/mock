@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "byekan";
+    src: url("../font/b.ttf") format("truetype");
+    font-size: 16px;
+}
+body{
+    font-family: byekan;
+    direction: rtl;
+    font-size: 14px;
+}
+.container-fluid{
+    padding: 0;
+}
+.page-sidebar{
+    width: 240px;
+    height: 100%;
+    background: #2c3034;
+    position: fixed;
+    color: white;
+    transition: .5s;
+}
+#sidebar{
+    padding: 0px;
+    margin-top: 60px;
+    list-style: none;
+}
+.page-sidebar .menu-icon{
+    font-size: 18px;
+    padding-left: 8px;
+}
+#sidebar li a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+#sidebar .fa-angle-left{
+    float: left;
+    padding-left: 5px;
+    font-size: 16px;
+    margin-top: 3px;
+}
+.child-menu{
+    display: none;
+    background: #2c3b40;
+}
+.child-menu a{
+    text-decoration: none;
+    color: white;
+}
+#sidebarToggle{
+    font-size: 18px;
+    float: left;
+    margin: 15px;
+}
+#sidebar .active{
+    background: deepskyblue;
+}
+.toggled{
+    width: 50px;
+    transition: .5s;
+}
+.toggled .fa-angle-left{
+    display: none;
+}
+.toggled .fa-angle-down{
+    display: none;
+}
+.toggled .menu-text{
+    display: none;
+}
+.toggled .menu-icon {
+    margin-right: 8px;
+}
+.toggled .child-menu{
+    margin-right: 50px;
+    position: absolute;
+    width: 200px;
+    border-right: solid 2px white;
+    border-radius: 5px;
+    z-index: 999;
+    margin-top: -43px;
+    border-left: solid 4px deepskyblue;
+}
+.top-nav{
+    height: 50px;
+    transition: .5s;
+    padding-right: 40px;
+    margin-right: 238px;
+}
+.content{
+    /* margin-top: 100px; */
+    transition: .5s;
+    margin-right: 260px;
+    /* overflow-x: hidden; */
+}
+.ltr{
+    direction: ltr;
+}
+.rtl{
+    direction: rtl;
+}
